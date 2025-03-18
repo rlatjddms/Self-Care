@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SymptomActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="증상 선택"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="#E6E6E6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="해당하는 증상을 선택해주세요."
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chip1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="불편감"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/chip2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="피로감"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chip3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="체중감소"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/chip4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="체중증가"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chip5"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="인후통"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/chip6"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="두통"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chip7"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="기침"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/chip8"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="구토"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chip9"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="변비"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/chip10"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="설사"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chip11"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="복통"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/chip12"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="재발성 복통"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chip13"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="어지럼증"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/chip14"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="가려움증"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chip15"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="피부 문제"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/chip16"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="경련과 떨림"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chip17"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="무감각함과 저림"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/chip18"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="빈뇨"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chip19"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="우울증"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/chip20"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/chip_background"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:gravity="center"
+                android:text="수면장애"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
